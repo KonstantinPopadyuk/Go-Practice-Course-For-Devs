@@ -2,8 +2,8 @@
 
 Mark each completed exercise and write down one key takeaway. Over time, this repository will become your personal reference.
 
-- [ ] 01 — Stable unique
-- [ ] 02 — Unicode-safe reverse
+- [x] 01 — Stable unique
+- [x] 02 — Unicode-safe reverse
 - [ ] 03 — Errors as values
 - [ ] 04 — Streaming I/O
 - [ ] 05 — JSON configuration
