@@ -14,7 +14,7 @@ Implement `Reverse`, which reverses a string by Unicode code points rather than 
 
 Run: `go test ./tasks/02-unicode -v`.
 
-The main trap after Python is that indexing a string in Go addresses a byte. `len(s)` is the number of bytes, not characters. For this exercise, `[]rune` is sufficient; grapheme clusters such as a family emoji are a separate, more advanced topic.
+The main trap is that indexing a string in Go addresses a byte. `len(s)` is the number of bytes, not characters. For this exercise, `[]rune` is sufficient; grapheme clusters such as a family emoji are a separate, more advanced topic.
 
 ## Going Further
 
