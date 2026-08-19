@@ -1,4 +1,4 @@
-# 01. Stable Unique: Slices Without Python Habits
+# 01. Stable Unique: Slice Semantics
 
 **Time:** 5–10 minutes.
 

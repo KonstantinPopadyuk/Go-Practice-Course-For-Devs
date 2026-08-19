@@ -1,6 +1,6 @@
 # Go Practice: 20 Hands-On Exercises
 
-A compact course for developers with Python experience who already know Go syntax and want to build fluency with Go idioms and common real-world tasks.
+A self-paced, test-driven Go practice course with 20 hands-on exercises for developers who know basic Go syntax and want idiomatic, interview-ready experience—from slices, errors, and I/O to goroutines, channels, cancellation, and graceful shutdown.
 
 ## Repository Structure
 
@@ -84,15 +84,16 @@ Run this track's tests with the race detector, for example: `go test ./tasks/11-
 | 19 | [Parallel log analysis](tasks/19-log-analyzer) | 45 min | bounded concurrency, files |
 | 20 | [Mini job runner](tasks/20-job-runner) | 60 min | combining all the techniques |
 
-## What May Feel Unfamiliar After Python
+## Coming to Go from Another Language
 
-- Do not try to translate list comprehensions literally: a plain loop is often the clearest option.
-- Decide whether the distinction between a `nil` slice and an empty slice matters.
-- An error is an ordinary value. Add context with `%w`; do not compare error text.
-- Accept narrow interfaces such as `io.Reader` and return concrete types.
-- The code that creates a channel is usually responsible for closing it. Do not close an input channel from the receiver side.
-- Every goroutine you start must have a clear termination path.
-- Check concurrent code with `-race`; an ordinary passing test does not rule out data races.
+This course assumes basic Go syntax, but not Go habits. If your main language is Python, JavaScript/TypeScript, Java/C#, or C++, read [Coming to Go from Other Languages](docs/coming-to-go.md) for a compact guide to the differences exercised here.
+
+Keep these rules in mind:
+
+- Understand which values are copied and which values still share underlying state.
+- Treat errors as values: wrap causes with `%w` and inspect them with `errors.Is` or `errors.As`.
+- Treat every goroutine as a resource: define how it stops, who closes its output, and how cancellation reaches each blocking operation.
+- Run concurrent code with `go test -race`; an ordinary passing test does not rule out data races.
 
 ## Course Rules
 

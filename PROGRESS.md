@@ -28,5 +28,5 @@ Mark each completed exercise and write down one key takeaway. Over time, this re
 For each exercise, briefly answer:
 
 1. Which bug or test took the most time to resolve?
-2. Which Go idiom felt unfamiliar after Python?
+2. Which Go idiom felt most different from your primary language?
 3. What would you change in a production version of the solution?
