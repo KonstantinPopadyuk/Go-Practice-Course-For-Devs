@@ -1,0 +1,13 @@
+# Go build/test artifacts
+*.test
+*.out
+coverage.out
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Exercise scratch data
+tmp/
